@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background: #D0FFA4;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* GRID BASE */
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    grid-column: 1 / 3;
+    background: #FF71DA;
+    text-align: center;
+    padding: 40px;
+}
+
+/* NAV */
+.nav {
+    grid-column: 1 / 3;
+    background: #FFD1F3;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000181;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #FF71DA;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    padding: 30px;
+    background: #006EE9;
+}
+
+/* FEATURED POST */
+.featured-post {
+    background: #FF71DA;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.featured-post button {
+    background: #000181;
+    color: #D0FFA4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+    background: #E8A0FF;
+    padding: 20px;
+    border-radius: 15px;
+    color: #000181;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #D0FFA4;
+    padding: 30px;
+    color: #000181;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000181;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #FF71DA;
+}
+
+/* FOOTER */
+.footer {
+    grid-column: 1 / 3;
+    background: #000181;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #FF71DA;
+}
+
+.footer a {
+    color: #D0FFA4;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
