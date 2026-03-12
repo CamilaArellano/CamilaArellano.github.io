@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background: #000181;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(90deg, #006EE9, #FF71DA);
+    text-shadow: 0 0 15px #E8A0FF;
+}
+
+/* NAV */
+.nav {
+    background: #FFD1F3;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000181;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* MAIN */
+.main-content {
+    background: #006EE9;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #D0FFA4;
+    padding: 25px;
+    border-radius: 15px;
+    color: #000181;
+}
+
+/* FOOTER */
+.footer {
+    background: #000181;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #FF71DA;
+}
+
+/* Buttons */
+.btn {
+    background: #FF71DA;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
