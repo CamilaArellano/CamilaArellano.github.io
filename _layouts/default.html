@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+</header>
+
+<nav class="nav">
+    <a href="/">Inicio</a>
+    <a href="/about">About Me</a>
+</nav>
+
+<div class="grid-container">
+
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <aside class="sidebar">
+        <h2>Entradas</h2>
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+</div>
+
+<footer class="footer">
+    <h3>Contacto</h3>
+    <p>Email: camila@email.com</p>
+    <p>
+        <a href="#">LinkedIn</a> |
+        <a href="#">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>
