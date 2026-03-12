@@ -1,0 +1,11 @@
+title: Camila Arellano
+description: Cybersecurity Research & Reports
+baseurl: ""
+url: "https://camilaarellano.github.io/"
+
+markdown: krmadown
+theme: null
+
+collections:
+  posts:
+   output: true
