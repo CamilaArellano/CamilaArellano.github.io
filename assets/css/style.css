@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #D0FFA4;
+    background: #000181;
     font-family: 'Segoe UI', sans-serif;
     color: white;
 }
@@ -16,9 +16,10 @@ body {
 /* HEADER */
 .header {
     grid-column: 1 / 3;
-    background: #FF71DA;
+    background: linear-gradient(90deg, #006EE9, #FF71DA);
     text-align: center;
     padding: 40px;
+    text-shadow: 0 0 10px #E8A0FF;
 }
 
 /* NAV */
