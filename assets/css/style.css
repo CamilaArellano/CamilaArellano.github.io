@@ -16,7 +16,7 @@ body {
 /* HEADER */
 .header {
     grid-column: 1 / 3;
-    background: linear-gradient(90deg, #FFB80E, #FD41B2,#FFEC48);
+    background-image: conic-gradient(from 90deg, #FFB80E, #FD41B2,#FFEC48);
     text-align: center;
     padding: 40px;
     color: #FD41B2;
