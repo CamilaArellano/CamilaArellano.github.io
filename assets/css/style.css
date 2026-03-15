@@ -19,6 +19,7 @@ body {
     background: linear-gradient(90deg,#FFEC48,#FFB80E,#FD41B2);
     text-align: center;
     padding: 40px;
+    border: 2px solid #FD41B2;
 }
 
 .header h1{
@@ -47,6 +48,13 @@ body {
 
 }
 
+.header p{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-shadow: #FFEC48;
+}
+
 /* NAV */
 .nav {
     grid-column: 1 / 3;
@@ -55,18 +63,21 @@ body {
     justify-content: center;
     gap: 30px;
     padding: 15px;
+    border: 2px solid #FD41B2;
 }
 
 .nav a {
     text-decoration: none;
     color: #FD41B2;
     font-weight: bold;
-
+    text-shadow: #FFEC48;
+/*
     filter: 
     drop-shadow(-2px -2px 0 #FFEC48)
     drop-shadow(2px -2px 0 #FFEC48)
     drop-shadow(-2px 2px 0 #FFEC48)
     drop-shadow(2px 2px 0 #FFEC48);
+*/
 }
 
 .nav a:hover {
@@ -76,7 +87,7 @@ body {
 /* MAIN CONTENT */
 .main-content {
     padding: 30px;
-    background-image: radial-gradient(#3AA8FD, #BCEDFE, #F6FCFF) ;
+    background: #F6FCFF;
 }
 
 /* FEATURED POST */
@@ -108,6 +119,7 @@ body {
 .sidebar {
     background-image: radial-gradient(#FFB80E,#FFEC48,#FFFCE7) ;
     padding: 30px;
+    border: 2px solid #FD41B2;
 }
 
 .sidebar ul {
@@ -122,23 +134,25 @@ body {
 .sidebar a {
     text-decoration: none;
     font-weight: bold;
+        color: #FF71DA;
+
 }
 
 .sidebar a:hover {
-    color: #FF71DA;
+    color: #3AA8FD;
 }
 
 /* FOOTER */
 .footer {
     grid-column: 1 / 3;
-    background: #BCEDFE;
+     background: linear-gradient(90deg,#3AA8FD,#BCEDFE ,#F6FCFF);
     text-align: center;
     padding: 20px;
     border-top: 2px solid #FF71DA;
 }
 
 .footer a {
-    color: #3AA8FD;
+    color: #FF71DA;
     text-decoration: none;
 }
 
