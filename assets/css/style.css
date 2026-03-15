@@ -16,10 +16,11 @@ body {
 /* HEADER */
 .header {
     grid-column: 1 / 3;
-    background: linear-gradient(90deg, #006EE9, #FF71DA);
+    background: linear-gradient(90deg, #FFB80E, #FD41B2,#FFEC48);
     text-align: center;
     padding: 40px;
-    text-shadow: 0 0 10px #E8A0FF;
+    color: #FD41B2;
+    text-shadow: 0 0 10px #FFEC48;
 }
 
 /* NAV */
