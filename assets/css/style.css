@@ -50,23 +50,23 @@ body {
 /* NAV */
 .nav {
     grid-column: 1 / 3;
-    background: #6EDD29;
+    background: linear-gradient(90deg,#439B07, #6EDD29, #FFEC48);
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 15px;
-
-    filter: 
-    drop-shadow(-2px -2px 0 #FFEC48)
-    drop-shadow(2px -2px 0 #FFEC48)
-    drop-shadow(-2px 2px 0 #FFEC48)
-    drop-shadow(2px 2px 0 #FFEC48);
 }
 
 .nav a {
     text-decoration: none;
     color: #FD41B2;
     font-weight: bold;
+
+    filter: 
+    drop-shadow(-2px -2px 0 #FFEC48)
+    drop-shadow(2px -2px 0 #FFEC48)
+    drop-shadow(-2px 2px 0 #FFEC48)
+    drop-shadow(2px 2px 0 #FFEC48);
 }
 
 .nav a:hover {
@@ -76,7 +76,7 @@ body {
 /* MAIN CONTENT */
 .main-content {
     padding: 30px;
-    background: #BCEDFE;
+    background-image: radial-gradient(#3AA8FD, #BCEDFE, #F6FCFF) ;
 }
 
 /* FEATURED POST */
@@ -106,7 +106,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-    background-image: radial-gradient(#439B07,#6EDD29) ;
+    background-image: radial-gradient(#FFB80E,#FFEC48,#FFFCE7) ;
     padding: 30px;
 }
 
