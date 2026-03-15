@@ -2,7 +2,7 @@ body {
     margin: 0;
     background: linear-gradient(90deg,#FFEC48,#FFB80E,#FD41B2);
     font-family: 'Inter', sans-serif;
-    color: white;
+    color: #FD41B2;
 }
 
 /* GRID BASE */
@@ -50,11 +50,17 @@ body {
 /* NAV */
 .nav {
     grid-column: 1 / 3;
-    background: linear-gradient(#FFEC48, #6EDD29);
+    background: #6EDD29;
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 15px;
+
+    filter: 
+    drop-shadow(-2px -2px 0 #FFEC48)
+    drop-shadow(2px -2px 0 #FFEC48)
+    drop-shadow(-2px 2px 0 #FFEC48)
+    drop-shadow(2px 2px 0 #FFEC48);
 }
 
 .nav a {
@@ -64,13 +70,13 @@ body {
 }
 
 .nav a:hover {
-    color: #FFD5EB;
+    color: #3AA8FD;
 }
 
 /* MAIN CONTENT */
 .main-content {
     padding: 30px;
-    background: #3AA8FD;
+    background: #BCEDFE;
 }
 
 /* FEATURED POST */
