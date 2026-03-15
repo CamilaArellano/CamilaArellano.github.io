@@ -18,6 +18,10 @@ body {
     grid-column: 1 / 3;
     background: linear-gradient(90deg,#FFEC48,#FFB80E,#FD41B2);
     text-align: center;
+    font-family:'Orbitron',sans-serif;
+    font-size:80px;
+    font-weight:900;
+    color:#FD41B2;
     padding: 40px;
 }
 
@@ -27,22 +31,23 @@ body {
     font-weight:900;
     color:#FD41B2;
 
-    text-shadow:
+    filter:
     /* stroke azul */
-    -2px -2px 0 #3AA8FD,
-    2px -2px 0 #3AA8FD,
-    -2px 2px 0 #3AA8FD,
-    2px 2px 0 #3AA8FD,
-    0 -3px 0 #3AA8FD,
-    0 3px 0 #3AA8FD,
-    3px 0 0 #3AA8FD,
-    -3px 0 0 #3AA8FD,
+    drop-shadow(-4px -4px 0 #3AA8FD)
+    drop-shadow(4px -4px 0 #3AA8FD)
+    drop-shadow(-4px 4px 0 #3AA8FD)
+    drop-shadow(4px 4px 0 #3AA8FD)
 
-    /* stroke amarillo */
-    -6px -6px 0 #FFEC48,
-    6px -6px 0 #FFEC48,
-    -6px 6px 0 #FFEC48,
-    6px 6px 0 #FFEC48;
+    /* stroke amarillo exterior */
+    drop-shadow(-8px -8px 0 #FFEC48)
+    drop-shadow(8px -8px 0 #FFEC48)
+    drop-shadow(-8px 8px 0 #FFEC48)
+    drop-shadow(8px 8px 0 #FFEC48)
+
+    /* glow neon */
+    drop-shadow(0 0 10px #FD41B2)
+    drop-shadow(0 0 20px #FD41B2);
+    transform: skew(-5deg);
 }
 
 /* NAV */
