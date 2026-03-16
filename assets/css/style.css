@@ -21,6 +21,14 @@ body {
     padding: 40px;
 }
 
+.logo{
+    width:90%;
+    max-width:900px;
+    display:block;
+    margin:auto;
+}
+
+/*
 .header h1{
     font-family:'Orbitron',sans-serif;
     font-size:80px;
@@ -28,24 +36,25 @@ body {
     color:#FD41B2;
 
     filter:
-    /* stroke azul */
+    /* stroke azul 
     drop-shadow(-6px -6px 0 #3AA8FD)
     drop-shadow(6px -6px 0 #3AA8FD)
     drop-shadow(-6px 6px 0 #3AA8FD)
     drop-shadow(6px 6px 0 #3AA8FD)
 
-    /* stroke amarillo exterior */
+    /* stroke amarillo exterior 
     drop-shadow(-12px -12px 0 #FFEC48)
     drop-shadow(12px -12px 0 #FFEC48)
     drop-shadow(-12px 12px 0 #FFEC48)
     drop-shadow(12px 12px 0 #FFEC48)
 
-    /* glow neon */
+    /* glow neon 
     drop-shadow(0 0 10px #FD41B2)
     drop-shadow(0 0 20px #FD41B2);
     transform: skew(-15deg);
 
 }
+*/
 
 .header p{
     font-family: 'Orbitron', sans-serif;
