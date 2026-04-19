@@ -2,7 +2,10 @@
 --bg:#1800ad;
 --cyan:#5be6f5;
 --purple:#a04af5;
+--dark:#0f0080;
 }
+
+/* BASE */
 
 body{
 margin:0;
@@ -26,11 +29,13 @@ text-decoration:none;
 border:1px solid var(--cyan);
 padding:8px 20px;
 border-radius:20px;
+transition:0.2s;
 }
 
 .nav a:hover{
 background:var(--cyan);
 color:var(--bg);
+box-shadow:0 0 10px var(--cyan);
 }
 
 /* HERO */
@@ -46,14 +51,20 @@ font-family:'Orbitron',sans-serif;
 font-size:clamp(60px,10vw,140px);
 color:var(--cyan);
 line-height:0.9;
+
+/* glow suave */
+text-shadow:
+0 0 10px var(--cyan),
+0 0 20px var(--cyan);
 }
 
 .tag{
 font-size:14px;
 letter-spacing:2px;
+opacity:0.8;
 }
 
-/* GRID */
+/* GRID GENERAL */
 
 .grid{
 display:grid;
@@ -65,7 +76,7 @@ min-height:400px;
 padding:40px;
 }
 
-/* TEXT BLOCK */
+/* TEXT */
 
 .text{
 display:flex;
@@ -73,20 +84,51 @@ flex-direction:column;
 justify-content:center;
 }
 
-/* IMAGE BLOCK (placeholder estilo glitch) */
+/* IMAGE CYBER */
 
 .image{
 background:
 radial-gradient(circle at 30% 30%, var(--cyan), transparent 40%),
 radial-gradient(circle at 70% 70%, var(--purple), transparent 40%),
 var(--bg);
+
 filter:blur(20px) contrast(120%);
+}
+
+/* ABOUT SECTION (NUEVO) */
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+min-height:400px;
+background:var(--dark);
+}
+
+.about-text{
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.about-text h2{
+font-family:'Orbitron',sans-serif;
+}
+
+.about-visual{
+background:
+radial-gradient(circle at 20% 30%, var(--cyan), transparent 40%),
+radial-gradient(circle at 80% 70%, var(--purple), transparent 40%),
+var(--bg);
+
+filter:blur(25px) contrast(130%) brightness(110%);
 }
 
 /* FEATURED */
 
 .featured h2{
 text-transform:uppercase;
+font-family:'Orbitron',sans-serif;
 }
 
 /* POSTS */
@@ -99,6 +141,10 @@ a{
 color:var(--cyan);
 }
 
+a:hover{
+color:var(--purple);
+}
+
 /* BUTTON */
 
 .btn{
@@ -108,11 +154,13 @@ border:1px solid var(--cyan);
 padding:10px 20px;
 border-radius:20px;
 text-decoration:none;
+transition:0.2s;
 }
 
 .btn:hover{
 background:var(--cyan);
 color:var(--bg);
+box-shadow:0 0 12px var(--cyan);
 }
 
 /* POST PAGE */
@@ -135,8 +183,21 @@ font-family:'Orbitron',sans-serif;
 grid-template-columns:1fr;
 }
 
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.about-visual{
+height:250px;
+}
+
 .hero{
 padding:40px 20px;
+}
+
+.nav{
+flex-wrap:wrap;
+gap:15px;
 }
 
 }
