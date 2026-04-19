@@ -3,16 +3,60 @@ layout: default
 title: Inicio
 ---
 
-<section class="featured-post">
-    <h2>Última Entrada</h2>
+<header class="hero">
+<p class="tag">CYBERSECURITY ✦ RESEARCH ✦ REPORTS</p>
+<h1>Camila<br>Arellano</h1>
+</header>
 
-    {% assign latest = site.posts.first %}
+<section class="grid">
 
-    <article>
-        <h3>
-            <a href="{{ latest.url }}">{{ latest.title }}</a>
-        </h3>
-        <p>{{ latest.excerpt }}</p>
-        <a href="{{ latest.url }}" class="btn">Leer más</a>
-    </article>
+<!-- ABOUT -->
+<div class="block text">
+<h2>✦ ABOUT ME</h2>
+
+<p>Soy estudiante enfocada en:</p>
+
+<ul>
+<li>📁 Ciberseguridad ofensiva</li>
+<li>🕵️ OSINT</li>
+<li>🧠 Análisis de vulnerabilidades</li>
+<li>🐧 Seguridad en Linux</li>
+</ul>
+
+<p>Este blog documenta mis investigaciones técnicas y reportes.</p>
+
+<p class="contact">
+Contacto<br>
+Email: camila@email.com<br>
+<a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+</p>
+</div>
+
+<div class="block image"></div>
+
+<!-- FEATURED POST -->
+<div class="block image"></div>
+
+<div class="block text featured">
+<h2>✦ {{ site.posts.first.title }}</h2>
+
+<p>{{ site.posts.first.excerpt }}</p>
+
+<a href="{{ site.posts.first.url }}" class="btn">Leer más →</a>
+</div>
+
+<!-- POSTS -->
+<div class="block text" id="posts">
+<h2>✦ ENTRADAS</h2>
+
+<ul>
+{% for post in site.posts %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+
+</div>
+
+<div class="block image"></div>
+
 </section>

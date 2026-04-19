@@ -1,55 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page.title }} | {{ site.title }}</title>
+
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<header class="header">
-    <!--
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>-->
-    <img src="/assets/logo.svg" class="logo">
-</header>
-
 <nav class="nav">
-    <a href="/">Inicio</a>
-    <a href="/about">About Me</a>
+<a href="/">Inicio</a>
+<a href="/about">About Me</a>
+<a href="/#posts">Posts</a>
 </nav>
 
-<div class="grid-container">
-
-    <main class="main-content">
-        {{ content }}
-    </main>
-
-    <aside class="sidebar">
-        <h2>Entradas</h2>
-        <ul>
-            {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </aside>
-
-</div>
-
-<footer class="footer">
-    <h3>Contacto</h3>
-    <p>Email: camila@email.com</p>
-    <p>
-        <a href="#">LinkedIn</a> |
-        <a href="#">GitHub</a>
-    </p>
-</footer>
+{{ content }}
 
 </body>
 </html>
