@@ -1,7 +1,3 @@
----
-title: About Me
----
-
 ## ✦ ABOUT ME
 
 Soy estudiante enfocada en:

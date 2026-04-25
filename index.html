@@ -12,7 +12,10 @@ title: Inicio
 
   <!-- ABOUT (DINÁMICO desde about.md) -->
   <div class="block text">
-    {{ site.pages | where: "title", "About Me" | first | dig: "content" }}
+    {% capture about %}
+      {% include about.md %}
+    {% endcapture %}
+    {{ about | markdownify }}
   </div>
 
   <!-- TERMINAL -->
