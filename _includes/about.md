@@ -1,4 +1,4 @@
-## ✦ ABOUT ME
+## ABOUT ME
 
 Soy estudiante enfocada en:
 
