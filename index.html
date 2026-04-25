@@ -10,15 +10,22 @@ title: Inicio
 
 <section class="grid">
 
-  <!-- ABOUT (DINÁMICO desde about.md) -->
- <div class="block text">
-   <div class="block text">
-    {% capture about %}
-      {% include about.md %}
-    {% endcapture %}
-    {{ about | markdownify }}
-</div>
-</div>
+  <!-- ABOUT -->
+  <div class="block text">
+    <h2>✦ ABOUT ME</h2>
+    <p>Soy estudiante enfocada en:</p>
+    <ul>
+      <li>🔐 Ciberseguridad ofensiva</li>
+      <li>🕵️ OSINT</li>
+      <li>🧠 Análisis de vulnerabilidades</li>
+      <li>🐧 Seguridad en Linux</li>
+    </ul>
+    <p>Este blog documenta mis investigaciones técnicas y reportes.</p>
+    <p class="contact">
+      Email: camila@email.com<br>
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+    </p>
+  </div>
 
   <!-- TERMINAL -->
   <div class="block terminal-block">
@@ -36,7 +43,7 @@ title: Inicio
     <p class="excerpt">
       {{ site.posts.first.content | strip_html | truncatewords: 35 }}
     </p>
-
+<!--
     <div class="meta-tags">
       <span class="tag-alert">HIGH</span>
       <span class="tag-neutral">Network</span>
@@ -44,7 +51,7 @@ title: Inicio
     </div>
 
     <a href="{{ site.posts.first.url }}" class="btn">Leer más →</a>
-  </div>
+  </div> -->
 
   <!-- POSTS -->
   <div class="block text" id="posts">
