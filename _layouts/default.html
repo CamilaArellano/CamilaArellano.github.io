@@ -10,18 +10,29 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
 <nav class="nav">
-<a href="/">Inicio</a>
-<a href="/about/">About Me</a>
-<a href="/#posts">Posts</a>
+
+  <a href="/">Inicio</a>
+
+  {% if site.posts.size > 0 %}
+    <a href="{{ site.posts.first.url }}" class="latest">
+      Latest Post
+    </a>
+  {% endif %}
+
+  <a href="/#posts">Posts</a>
+
 </nav>
 
 {{ content }}
+
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>

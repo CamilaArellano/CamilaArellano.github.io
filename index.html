@@ -10,45 +10,37 @@ title: Inicio
 </header>
 
 <section class="grid">
-
-  <!-- ABOUT -->
-  <div class="block text">
-    <h2>✦ ABOUT ME</h2>
-    <ul>
-      <li>📁 Ciberseguridad ofensiva</li>
-      <li>🕵️ OSINT</li>
-      <li>🧠 Análisis de vulnerabilidades</li>
-      <li>🐧 Seguridad en Linux</li>
-    </ul>
-    <p>Este blog documenta mis investigaciones técnicas y reportes.</p>
-    <p class="contact">
-      Email: camila@email.com<br>
-      <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
-    </p>
-  </div>
-
-  <!-- TERMINAL -->
+<!-- TERMINAL -->
   <div class="block terminal-block">
     <div class="terminal-bar">● ● ●</div>
     <div class="terminal-body" id="terminal-output"></div>
   </div>
 
-  <!-- FEATURED POST imagen -->
+  <!-- VISUAL -->
   <div class="block image"></div>
 
-  <!-- FEATURED POST texto — excerpt corregido con strip_html -->
+  <!-- FEATURED POST -->
   <div class="block text featured">
-    <h2>✦ {{ site.posts.first.title }}</h2>
-    <p class="excerpt">{{ site.posts.first.content | strip_html | truncatewords: 35 }}</p>
-    <div class="meta-tags">
-      <span class="tag-alert">HIGH</span>
-      <span class="tag-neutral">Network Attack</span>
-      <span class="tag-neutral">WiFi Security</span>
-    </div>
-    <a href="{{ site.posts.first.url }}" class="btn">Leer más →</a>
+    {% if site.posts.size > 0 %}
+      <h2>✦ {{ site.posts.first.title }}</h2>
+
+      <p class="excerpt">
+        {{ site.posts.first.content | strip_html | truncatewords: 35 }}
+      </p>
+
+      <div class="meta-tags">
+        <span class="tag-alert">HIGH</span>
+        <span class="tag-neutral">Network</span>
+        <span class="tag-neutral">Security</span>
+      </div>
+
+      <a href="{{ site.posts.first.url }}" class="btn">Leer más →</a>
+    {% else %}
+      <p>No hay posts aún.</p>
+    {% endif %}
   </div>
 
-  <!-- POSTS LIST -->
+  <!-- POSTS -->
   <div class="block text" id="posts">
     <h2>✦ ENTRADAS</h2>
     <ul class="post-list">
@@ -58,10 +50,9 @@ title: Inicio
     </ul>
   </div>
 
-  <!-- LIVE LOGS -->
+  <!-- LOGS -->
   <div class="block logs-block">
     <p class="logs-header">● LIVE MONITOR</p>
     <pre id="live-logs"></pre>
   </div>
-
 </section>
