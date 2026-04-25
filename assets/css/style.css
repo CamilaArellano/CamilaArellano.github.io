@@ -346,6 +346,12 @@ a:hover { color: var(--purple); }
   color: rgba(91,230,245,0.35);
 }
 
+.log-cursor::after {
+  content: ' █';
+  animation: blink 1s step-end infinite;
+  color: var(--cyan);
+}
+
 #live-logs {
   font-family: 'Share Tech Mono', monospace;
   font-size: 12px;
