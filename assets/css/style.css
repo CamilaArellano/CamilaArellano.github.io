@@ -103,6 +103,14 @@ body {
   z-index: 1;
 }
 
+.hero .logo {
+  max-width: 420px;
+  width: 80%;
+  filter: drop-shadow(0 0 25px rgba(91,230,245,0.5));
+  position: relative;
+  z-index: 1;
+}
+
 /* ── GRID ── */
 .grid {
   display: grid;
