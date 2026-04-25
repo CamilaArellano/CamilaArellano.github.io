@@ -5,39 +5,40 @@ title: Inicio
 
 <header class="hero">
   <p class="tag">CYBERSECURITY ✦ RESEARCH ✦ REPORTS</p>
-  <!-- <h1>Camila<br>Arellano</h1> -->
-  <img src="/assets/logo.png" alt="Camila Arellano" class="logo">
+  <img src="/assets/logo2.png" alt="Camila Arellano" class="logo">
 </header>
 
 <section class="grid">
-<!-- TERMINAL -->
+
+  <!-- ABOUT (DINÁMICO desde about.md) -->
+  <div class="block text">
+    {{ site.pages | where: "title", "About Me" | first.content }}
+  </div>
+
+  <!-- TERMINAL -->
   <div class="block terminal-block">
     <div class="terminal-bar">● ● ●</div>
     <div class="terminal-body" id="terminal-output"></div>
   </div>
 
-  <!-- VISUAL -->
+  <!-- FEATURED IMAGE -->
   <div class="block image"></div>
 
   <!-- FEATURED POST -->
   <div class="block text featured">
-    {% if site.posts.size > 0 %}
-      <h2>✦ {{ site.posts.first.title }}</h2>
+    <h2>✦ {{ site.posts.first.title }}</h2>
 
-      <p class="excerpt">
-        {{ site.posts.first.content | strip_html | truncatewords: 35 }}
-      </p>
+    <p class="excerpt">
+      {{ site.posts.first.content | strip_html | truncatewords: 35 }}
+    </p>
 
-      <div class="meta-tags">
-        <span class="tag-alert">HIGH</span>
-        <span class="tag-neutral">Network</span>
-        <span class="tag-neutral">Security</span>
-      </div>
+    <div class="meta-tags">
+      <span class="tag-alert">HIGH</span>
+      <span class="tag-neutral">Network</span>
+      <span class="tag-neutral">WiFi</span>
+    </div>
 
-      <a href="{{ site.posts.first.url }}" class="btn">Leer más →</a>
-    {% else %}
-      <p>No hay posts aún.</p>
-    {% endif %}
+    <a href="{{ site.posts.first.url }}" class="btn">Leer más →</a>
   </div>
 
   <!-- POSTS -->
@@ -55,4 +56,5 @@ title: Inicio
     <p class="logs-header">● LIVE MONITOR</p>
     <pre id="live-logs"></pre>
   </div>
+
 </section>

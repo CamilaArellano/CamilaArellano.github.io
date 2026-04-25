@@ -473,3 +473,25 @@ a:hover { color: var(--purple); }
   .block { min-height: auto; padding: 32px 24px; }
 }
 
+/* ── Markdown dentro del About ── */
+
+.block.text h2,
+.block.text h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+.block.text ul {
+  margin-top: 10px;
+}
+
+.block.text a {
+  text-decoration: underline;
+  color: var(--cyan);
+}
+
+.block.text a:hover {
+  color: var(--purple);
+}
