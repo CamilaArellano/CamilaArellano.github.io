@@ -246,7 +246,7 @@ body {
   overflow: hidden;
 }
 
-/* ── META TAGS
+/* ── META TAGS ── */
 .meta-tags {
   display: flex;
   flex-wrap: wrap;
@@ -270,7 +270,7 @@ body {
 .tag-neutral {
   color: rgba(91,230,245,0.6);
   border-color: var(--glass-border);
-  background: var(--glass); ── */
+  background: var(--glass); 
 }
 
 /* ── BUTTON ── */
