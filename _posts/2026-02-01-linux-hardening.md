@@ -15,20 +15,7 @@
 [https://getkairo.com/embed-local?id=5f376e9e-948f-485c-9f55-6dd9ab34de56&local=true&title=Excercise%20&type=BlockCounter&color=amber&size=1&faceType=flex&increaseValue=1](https://getkairo.com/embed-local?id=5f376e9e-948f-485c-9f55-6dd9ab34de56&local=true&title=Excercise%20&type=BlockCounter&color=amber&size=1&faceType=flex&increaseValue=1)
 
 - **Recipes**
-- **Datos**
-    
-    > le21080725@merida.tecnm.mx
-    0DhA1dh*Lq
-    > 
-    
-    > TAN TAN
-    ID: 72303456
-    > 
-    
-    > SUBES
-    11octubre2003
-    > 
-    
+
 
 ---
 
