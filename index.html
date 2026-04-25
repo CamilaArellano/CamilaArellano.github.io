@@ -12,7 +12,7 @@ title: Inicio
 
   <!-- ABOUT (DINÁMICO desde about.md) -->
   <div class="block text">
-    {{ site.pages | where: "title", "About Me" | first.content }}
+    {{ site.pages | where: "title", "About Me" | first.content | markdownify }}
   </div>
 
   <!-- TERMINAL -->
