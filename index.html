@@ -11,12 +11,10 @@ title: Inicio
 <section class="grid">
 
   <!-- ABOUT (DINÁMICO desde about.md) -->
-  <div class="block text">
-    {% capture about %}
-      {% include about.md %}
-    {% endcapture %}
-    {{ about | markdownify }}
-  </div>
+ <div class="block text">
+  {% assign about = site.pages | where: "title", "About Me" | first %}
+  {{ about.content }}
+</div>
 
   <!-- TERMINAL -->
   <div class="block terminal-block">
