@@ -2,7 +2,7 @@
 title: "Analysing Security Threats"
 date: 2026-03-20
 ---
-#Analysing Security Threats
+# Analysing Security Threats
 
 NIST Defines a Threat as:
 >[!NOTE]
