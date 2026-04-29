@@ -2,7 +2,7 @@
 title: "DDoS"
 date: 2926-03-19
 ---
-# Distributed Denial of Service Analsys
+# Distributed Denial of Service Analysis
 
 ## Denial of service attacks
 A Denial of Service (DoS) is a type of cyberattack that aims to disrupt the normal functioning of a network, service, or server by overwhelming it with a flood of internet traffic. The primary goal isn't to gain unauthorized access or to steal data but <mark style="background: #CE97FB;">to make a machine or network resource unavailable to its intended users.</mark>
