@@ -1,19 +1,8 @@
 ---
-Estado: 
-Fecha de incio: 2025-02-08
-Tema: Ciberseguridad
-Tipo: Certificación
-Fecha de finalización: 2025-02-08
-tags:
-  - SOCAnalyst
-  - PacketAnalysis
-Archivos:
+title: "DDoS"
+date; 2926-03-19
 ---
-> [!important]  Related Notes 
-> [[Packet Analysis]]
-> [[Elastic Playground]]
-> [[]]  
-> 
+# Distributed Denial of Service Analsys
 
 ## Denial of service attacks
 A Denial of Service (DoS) is a type of cyberattack that aims to disrupt the normal functioning of a network, service, or server by overwhelming it with a flood of internet traffic. The primary goal isn't to gain unauthorized access or to steal data but <mark style="background: #CE97FB;">to make a machine or network resource unavailable to its intended users.</mark>
