@@ -1,14 +1,6 @@
 ---
-Estado: En curso
-Fecha de incio: 2025-02-02
-Tema: Ciberseguridad
-Tipo: Lab
-Fecha de finalización: 2025-02-08
-tags:
-  - OffensiveCyber
-  - PacketAnalysis
-  - SOCAnalyst
-Archivos:
+title: "Packet analysis"
+date: 2026-03-21
 ---
 > [!important]  Related Notes 
 > [[Distributed Denial of Service (DDoS) Analysis]]
