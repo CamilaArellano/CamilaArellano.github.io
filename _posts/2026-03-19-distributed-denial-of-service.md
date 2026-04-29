@@ -1,6 +1,6 @@
 ---
 title: "DDoS"
-date; 2926-03-19
+date: 2926-03-19
 ---
 # Distributed Denial of Service Analsys
 
