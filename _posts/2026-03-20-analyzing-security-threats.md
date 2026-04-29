@@ -1,18 +1,8 @@
 ---
-Estado: En curso
-Fecha de incio: 2024-07-31
-Tema: Ciberseguridad
-Tipo: Curso online
-Fecha de finalización:
-tags:
-  - SOCAnalyst
-Archivos:
+title: "Analysing Security Threats"
+date: 2026-03-20
 ---
-> [!important]  Related Notes 
-> [[Distributed Denial of Service (DDoS) Analysis]]
-> [[OWASP]]
-> [[]]  
-> 
+#Analysing Security Threats
 
 NIST Defines a Threat as:
 >[!NOTE]
