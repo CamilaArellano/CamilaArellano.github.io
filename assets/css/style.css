@@ -506,6 +506,65 @@ tr:hover {
   .block { min-height: auto; padding: 32px 24px; }
 }
 
+/* ── ASCII PORTRAIT BLOCK ── */
+.ascii-portrait-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000 !important;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.ascii-art {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--cyan);
+  opacity: 0.82;
+  white-space: pre;
+  text-shadow: 0 0 6px rgba(91,230,245,0.4);
+  text-align: left;
+}
+
+/* ── CV SUMMARY BLOCK ── */
+.cv-summary-block {
+  justify-content: center !important;
+}
+
+.cv-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.cv-list li {
+  font-size: 13px !important;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(91,230,245,0.8) !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  line-height: 1.6;
+}
+
+.cv-label {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--purple);
+  text-transform: uppercase;
+  margin-right: 8px;
+  min-width: 52px;
+}
+
+@media (max-width: 768px) {
+  .ascii-art { font-size: 7px; }
+}
+
+
 /* ── Markdown dentro del About ── */
 
 .block.text h2,
