@@ -35,16 +35,19 @@ title: Home
   </div>
 
   <!-- ROW 2: ASCII+CV | FEATURED POST -->
-  <h2>✦ CV SNAPSHOT</h2>
+  <div class="block ascii-cv-block">
+    <div class="cv-panel">
+      <h2>✦ CV SNAPSHOT</h2>
       <ul class="cv-list">
         <li><span class="cv-label">Role</span> SOC MxDR Analyst · Security Transformation Associate @ Accenture</li>
         <li><span class="cv-label">Degree</span> B.Eng. Computer Systems Engineering · ITM — Cybersecurity specialization</li>
         <li><span class="cv-label">Skills</span> Alert Triage · Threat Detection · Incident Response · OSINT · Firewall Troubleshooting</li>
-        <li><span class="cv-label">Certs</span> Google Professional Security Operations Engineer</li>
+        <li><span class="cv-label">Certs</span> Google Professional Security Operations Engineer · TryHackMe · HTB</li>
         <li><span class="cv-label">Tools</span> Google SecOps SIEM & SOAR · CrowdStrike Falcon · Palo Alto NGFW · Cisco ISE · Python · Java</li>
         <li><span class="cv-label">Lang</span> Spanish (native) · English (B2)</li>
       </ul>
       <a href="/assets/camila-arellano-cv.pdf" class="btn" target="_blank">View Full CV →</a>
+    </div>
     <pre class="ascii-art">++===:::::::::::::::::::::::...:........:::.:.::::::::::::......:....::..:::::::
 =-::::::::.:::..::::::::::.:..:..........:...........:-==-=.:.:.::.:::::.:::::::
 :::::::....:.::::::.::-:..:.:::.........:::.......:.::::-*=:::.:::::::::::::::::
@@ -94,6 +97,11 @@ title: Home
   </div>
 
   <!-- ROW 3: LIVE MONITOR | POSTS -->
+  <div class="block logs-block">
+    <p class="logs-header">● LIVE MONITOR</p>
+    <pre id="live-logs"></pre>
+  </div>
+
   <div class="block text" id="posts">
     <h2>✦ POSTS</h2>
     <ul class="post-list">
@@ -101,11 +109,6 @@ title: Home
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
-  </div>
-
-  <div class="block logs-block">
-    <p class="logs-header">● LIVE MONITOR</p>
-    <pre id="live-logs"></pre>
   </div>
 
 </section>
