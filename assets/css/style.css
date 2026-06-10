@@ -506,30 +506,67 @@ tr:hover {
   .block { min-height: auto; padding: 32px 24px; }
 }
 
-/* ── ASCII PORTRAIT BLOCK ── */
-.ascii-portrait-block {
+/* ── Markdown inside About ── */
+
+.block.text h2,
+.block.text h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+.block.text ul {
+  margin-top: 10px;
+}
+
+.block.text a {
+  text-decoration: underline;
+  color: var(--cyan);
+}
+
+.block.text a:hover {
+  color: var(--purple);
+}
+
+/* ── ASCII + CV COMBINED BLOCK ── */
+.ascii-cv-block {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
   background: #000 !important;
-  padding: 32px;
+  padding: 28px 24px;
   overflow: hidden;
 }
 
-.ascii-art {
+.ascii-cv-block .ascii-art {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 11px;
-  line-height: 1.45;
+  font-size: 7px;
+  line-height: 1.38;
   color: var(--cyan);
-  opacity: 0.82;
+  opacity: 0.85;
   white-space: pre;
-  text-shadow: 0 0 6px rgba(91,230,245,0.4);
-  text-align: left;
+  text-shadow: 0 0 6px rgba(91,230,245,0.35);
+  flex: 1;
+  overflow: hidden;
 }
 
-/* ── CV SUMMARY BLOCK ── */
-.cv-summary-block {
-  justify-content: center !important;
+.cv-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  flex: 1;
+}
+
+.cv-panel h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--cyan);
+  opacity: 0.7;
 }
 
 .cv-list {
@@ -561,29 +598,11 @@ tr:hover {
 }
 
 @media (max-width: 768px) {
-  .ascii-art { font-size: 7px; }
+  .ascii-cv-block {
+    flex-direction: column;
+    grid-column: span 1;
+  }
+  .ascii-cv-block .ascii-art { font-size: 6px; }
 }
 
-
-/* ── Markdown dentro del About ── */
-
-.block.text h2,
-.block.text h3 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 13px;
-  letter-spacing: 0.15em;
-  margin-bottom: 10px;
-}
-
-.block.text ul {
-  margin-top: 10px;
-}
-
-.block.text a {
-  text-decoration: underline;
-  color: var(--cyan);
-}
-
-.block.text a:hover {
-  color: var(--purple);
-}
+/* ── Markdown inside About ── */
