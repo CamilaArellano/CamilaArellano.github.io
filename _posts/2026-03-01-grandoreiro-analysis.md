@@ -600,8 +600,3 @@ Los hallazgos principales son:
 11. Kaspersky GReAT, "Grandoreiro, el troyano global con metas grandiosas". [https://securelist.lat/grandoreiro-banking-trojan](https://securelist.lat/grandoreiro-banking-trojan)
 12. M. Frydrych et al., "IBM X-Force Threat Analysis: Hive0148 observed targeting Mexico and Costa Rica". [https://www.ibm.com/think/x-force/ibm-x-force-threat-analysis-hive0148-observed-targeting-mexico-costa-rica](https://www.ibm.com/think/x-force/ibm-x-force-threat-analysis-hive0148-observed-targeting-mexico-costa-rica)
 
----
-
-## Tags Sugeridos
-
-`#cybersecurity` `#malware-analysis` `#banking-trojan` `#grandoreiro` `#yara` `#yara-l` `#google-secops` `#threat-intelligence` `#ioc` `#mitre-attack` `#powershell` `#fileless` `#phishing` `#SOC` `#latam` `#delphi` `#dga` `#osint` `#detection-engineering` `#threat-hunting`
