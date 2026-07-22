@@ -2,10 +2,6 @@
 title: "Packet analysis"
 date: 2026-03-21
 ---
-> [!important]  Related Notes 
-> [[Distributed Denial of Service (DDoS) Analysis]]
->
-> 
 
 ## Network traffic
 
