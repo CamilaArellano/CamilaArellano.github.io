@@ -28,16 +28,6 @@ body {
   background-size: 40px 40px;
 }
 
-/*Post's images*/
-.content img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  border: 1px solid var(--glass-border);
-  border-radius: 6px;
-}
-
 /* ── NAV ── */
 .nav {
   display: flex;
