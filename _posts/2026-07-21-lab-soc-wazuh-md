@@ -1,10 +1,18 @@
+---
+layout: post
+title: "Laboratorio SOC con Wazuh"
+date: 2026-07-21
+author: Eira Camila Arellano Peraza
+categories: [ciberseguridad, malware, SOC, threat-intelligence]
+---
+
 ## Objetivo del laboratorio
 Este laboratorio implementa un entorno aislado para simular un pequeño Security Operations Center (SOC) utilizando Wazuh como plataforma SIEM/XDR.
 
 El objetivo es generar actividad de seguridad controlada desde una máquina atacante, observar los eventos producidos y analizar las alertas desde Wazuh.
 
 ## Arquitectura del Laboratorio
-![[Arquitectura Laboratorio.png]]
+![[]]
 
 
 ```
