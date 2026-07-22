@@ -12,7 +12,7 @@ Este laboratorio implementa un entorno aislado para simular un pequeño Security
 El objetivo es generar actividad de seguridad controlada desde una máquina atacante, observar los eventos producidos y analizar las alertas desde Wazuh.
 
 ## Arquitectura del Laboratorio
-![](https://github.com/CamilaArellano/CamilaArellano.github.io/blob/3edbc4df5d0cb6096ddf1053c34144773a7333f2/assets/images/Arquitectura%20Laboratorio.png)
+![Arquitectura del laboratorio](/assets/images/Arquitectura%20Laboratorio.png)
 
 
 ```
