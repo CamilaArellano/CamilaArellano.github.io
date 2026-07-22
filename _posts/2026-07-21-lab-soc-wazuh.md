@@ -12,7 +12,7 @@ Este laboratorio implementa un entorno aislado para simular un pequeño Security
 El objetivo es generar actividad de seguridad controlada desde una máquina atacante, observar los eventos producidos y analizar las alertas desde Wazuh.
 
 ## Arquitectura del Laboratorio
-![[]]
+![](https://github.com/CamilaArellano/CamilaArellano.github.io/blob/3edbc4df5d0cb6096ddf1053c34144773a7333f2/assets/images/Arquitectura%20Laboratorio.png)
 
 
 ```
@@ -43,10 +43,11 @@ RED: lab-interno (192.168.100.0/24) — todas aisladas entre sí
 > **Nota**: Las máquinas virtuales pueden comunicarse entre sí a través de la red virtual privada. El acceso a Internet se habilita únicamente cuando es necesario, por ejemplo, durante la instalación de paquetes y herramientas.
 ### Archivo de configuración
 La red se define mediante un archivo XML compatible con Libvirt.
-`<network>`: Es el elemento raíz que contiene toda la configuración de la red virtual.
-`<bridge>`: Define el bridge virtual que actuará como un switch virtual. Las máquinas virtuales se conectan a este bridge para poder comunicarse entre ellas.
-`<ip>`: La dirección `192.168.100.1` puede utilizarse como puerta de enlace para las máquinas virtuales.
-`<dhcp>`: Define el rango de direcciones que el servicio DHCP puede asignar automáticamente.
+
+- `<network>`: Es el elemento raíz que contiene toda la configuración de la red virtual.
+- `<bridge>`: Define el bridge virtual que actuará como un switch virtual. Las máquinas virtuales se conectan a este bridge para poder comunicarse entre ellas.
+- `<ip>`: La dirección `192.168.100.1` puede utilizarse como puerta de enlace para las máquinas virtuales.
+- `<dhcp>`: Define el rango de direcciones que el servicio DHCP puede asignar automáticamente.
 
 ```xml
 <network>
@@ -76,7 +77,6 @@ sudo virsh net-autostart lab-interno
 sudo virsh net-list --all 
 ```
 
----
 
 ## 2. Reglas de iptables (NAT para acceso a internet)
 
@@ -316,8 +316,3 @@ nmap -sS 192.168.100.20
 
 **Resultado:** Puerto `5357/tcp` (wsdapi) abierto en Windows.
 
-
-
-# Windows → descargar desde Edge
-http://192.168.100.10:8080
-```
