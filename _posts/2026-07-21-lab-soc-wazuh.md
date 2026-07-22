@@ -36,9 +36,9 @@ El objetivo es generar actividad de seguridad controlada desde una máquina atac
 RED: lab-interno (192.168.100.0/24) — todas aisladas entre sí
 ```
 
----
 
-## 1. Red Virtual (lab-interno)
+
+## Red Virtual (lab-interno)
 
 > **Nota**: Las máquinas virtuales pueden comunicarse entre sí a través de la red virtual privada. El acceso a Internet se habilita únicamente cuando es necesario, por ejemplo, durante la instalación de paquetes y herramientas.
 ### Archivo de configuración
@@ -78,7 +78,7 @@ sudo virsh net-list --all
 ```
 
 
-## 2. Reglas de iptables (NAT para acceso a internet)
+## Reglas de iptables (NAT para acceso a internet)
 
 Las reglas permiten que las VMs tengan acceso a internet a través del host durante la instalación.
 
@@ -99,9 +99,9 @@ sudo systemctl enable --now iptables
 
 > **Nota:** En CachyOS no existe `iptables-persistent`. Se usa `iptables-save` directamente.
 
----
 
-## 3. VM Wazuh Server (Ubuntu 22.04 LTS)
+
+## VM Wazuh Server (Ubuntu 22.04 LTS)
 
 ### Configuración de red estática
 
@@ -167,9 +167,9 @@ https://192.168.100.10:443
 
 > Aceptar el certificado autofirmado al entrar por primera vez.
 
----
 
-## 4. VM Windows 10 (Víctima)
+
+## VM Windows 10 (Víctima)
 
 ### Configuración de red estática
 
@@ -241,9 +241,9 @@ En Windows, abrir la GUI del agente Wazuh:
 net start WazuhSvc
 ```
 
----
 
-## 5. VM Kali Linux (Atacante)
+
+## VM Kali Linux (Atacante)
 
 ### Herramientas instaladas
 
@@ -257,9 +257,9 @@ sudo apt install -y nmap metasploit-framework hydra
 sudo systemctl enable --now ssh
 ```
 
----
 
-## 6. Casos de ataque ejecutados
+
+## Casos de ataque ejecutados
 
 ### Caso 1: Fuerza Bruta SSH
 Simular múltiples intentos fallidos de autenticación contra un servicio SSH dentro del entorno de laboratorio.
