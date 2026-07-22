@@ -316,59 +316,7 @@ nmap -sS 192.168.100.20
 
 **Resultado:** Puerto `5357/tcp` (wsdapi) abierto en Windows.
 
----
 
-## 7. Problemas conocidos y soluciones
-
-### DNS no resuelve nombres en Ubuntu
-
-```bash
-sudo systemctl stop systemd-resolved
-sudo rm /etc/resolv.conf
-sudo sh -c 'echo "nameserver 1.1.1.1" > /etc/resolv.conf'
-```
-
-### Bridge virbr0/virbr1 en estado DOWN al reiniciar
-
-```bash
-# Verificar qué vnet corresponde a cada VM
-bridge link show
-
-# Reconectar manualmente
-sudo ip link set vnetX master vibrX
-```
-
-### IP dinámica cambia al reiniciar la VM
-
-Usar netplan con IP estática (ver sección 3). También eliminar la IP dinámica sobrante:
-
-```bash
-sudo ip addr del 192.168.100.XX/24 dev enp1s0
-```
-
-### Reglas iptables se pierden al reiniciar
-
-```bash
-sudo sh -c 'iptables-save > /etc/iptables/iptables.rules'
-sudo systemctl enable --now iptables
-```
-
-### Wazuh no compatible con Ubuntu 24.04/26.04
-
-Wazuh 4.9 solo soporta oficialmente hasta Ubuntu **22.04 LTS**. Usar esa versión.
-
-### Transferir archivos del host a Windows
-
-1. Copiar archivo al servidor Wazuh via SCP
-2. Servir con Python HTTP server en el servidor Wazuh
-3. Descargar desde Windows con el navegador
-
-```bash
-# Host → Wazuh
-scp archivo camila@192.168.100.10:/home/camila/
-
-# Wazuh → servir
-python3 -m http.server 8080
 
 # Windows → descargar desde Edge
 http://192.168.100.10:8080
